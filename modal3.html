@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 70%; /* Full width */
+  height: 200%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  align-self: center;
+  align-content: center;
+  margin-top: -2%;
+  margin-left: 20%;
+ 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 65%;
+  margin-left: 35%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+table.services{
+                margin-left: 7%;
+                margin-right: 7%;
+                border-collapse: separate;
+                border-spacing: 60px;
+                margin-top: -12%;
+                
+            }
+            td.services{
+                align-content: center;
+                text-align: center;
+                padding: 5px;
+                font-size: 30;
+                font-family: Cambria;
+                color: lightsalmon;
+                border-radius: 50px;
+                
+                
+            }
+            * {box-sizing: border-box}
+body {
+    font-family: Verdana, sans-serif;
+    margin:0;
+    margin-left: 30%;
+    background-image: url('Salon_project/background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: 40%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+table.price{
+                padding: 1px;
+                margin-left: -50%;
+                margin-right: 10%;
+                border-collapse: collapse;
+                border-spacing: 6px;
+                margin-top: 14.5%;
+                margin-bottom: -50%;
+
+                border-color: salmon;
+                
+
+            }
+            tr.price{
+                padding: 15px;
+                border-collapse: collapse;
+            }
+            td.price{
+                text-align: center;
+                padding: 8px;
+                
+                font-size: 14pt;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: black;
+                color: white;
+            }
+            th.price{
+                text-align: center;
+                padding: 10px;
+                width: 300px;
+                font-size: 17pt;
+                color: rgb(19, 233, 248);
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: black;
+            }
+            td.price1{
+                width: 120px;
+                text-align: center;
+                padding: 8px;
+                
+                font-size: 14pt;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: black;
+                color: white;
+            }
+            th.price1{
+                width: 120px;
+                text-align: center;
+                padding: 10px;
+                
+                font-size: 17pt;
+                color: rgb(19, 233, 248);
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: black;
+            }
+            #myBtn{
+                padding: 10px;
+                font-size: 20pt;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: lightsalmon;
+            }
+</style>
+</head>
+<body>
+
+<h1 style="color: white; margin-left: -20%; margin-top: 7%; font-size: 50pt;"> HAIR SPA</h1>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" style="margin-left: 50%;">View Gallery</button>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p style=" margin-left: 70%; font-size: 40px; margin-bottom: -20%; font-family: fantasy;"> HAIR SPA...</p>
+    
+    
+
+    <br>
+    <body>
+      <br><br>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Salon_project/spa1.jpg" style="width: 60%; height: 60%;">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Salon_project/spa2.jpg" style="width:60%; height: 360%;">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Salon_project/spa3.jpg" style="width:60%; height: 60%;">
+          <div class="text"></div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        <br>
+        <div style="text-align:center; margin-left : -36%;">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        </body>
+        </html> 
+        
+  </div>
+
+  
+
+</div>
+<div style="margin-left: -60%; margin-right: 40%; margin-top: -20%;">
+<table border="2" style="margin-left: 25%; " class="price">
+    <tr class="price">
+        <th class="price"> Product  </th>
+        <th class="price1"> Price </th>
+    </tr>
+    <tr class="price">
+        <td class="price"> L’Oreal Paris Total Repair 5 Masque </td>
+        <td class="price1"> Rs. 1500 </td>
+    </tr>
+    <tr class="price">
+        <td class="price"> L’Oreal Paris Hair Spa Deep Nourishing For Dry Hair </td>
+        <td class="price1"> Rs. 2000 </td>
+    </tr>
+    <tr class="price">
+        <td class="price"> Wella Professional Enrich Moisturizing Treatment For Dry And Damaged Hair </td>
+        <td class="price1"> Rs. 1200 </td>
+    </tr>
+    <tr class="price">
+        <td class="price"> Schwarzkopf Spa Essence Hydrating Cream Masque </td>
+        <td class="price1"> Rs. 2000 </td>
+    </tr>
+    
+</table>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

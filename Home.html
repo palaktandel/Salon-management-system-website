@@ -1,0 +1,472 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Salon.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        
+        <style>
+            hr{
+                margin-left: 100px;
+                margin-right: 100px;
+                border-color: lightsalmon;
+                margin-top:-1%;
+    
+    
+}
+            /* width */
+            ::-webkit-scrollbar {
+                width: 0px;
+            }
+            
+            c{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 120;
+                color: lightsalmon;
+                margin-left: 10%;
+            }
+            p{
+                color: white;
+                font-size: 20;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                margin-right: 50%;
+                margin-left: 10%;
+            }
+            a.p1{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 50;
+                color: lightsalmon;
+                text-decoration: none;
+            }
+            
+            img{
+                margin-left: 12%;
+                
+            }
+            a.viewmore:link, a.viewmore:visited{ 
+                text-decoration: none; 
+                color:lightsalmon ;
+                
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 20;
+                text-align: center;
+                
+                font-weight: bold;
+            }
+            a.viewmore:hover, a.viewmore:active{
+                text-decoration: underline;
+                color: lightsalmon; 
+                
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25;
+                text-align: center;
+                
+                font-weight: bold; 
+            }
+            table{
+                margin-left: 17%;
+                margin-right: 7%;
+                border-collapse: separate;
+                border-spacing: 60px;
+            }
+            td{
+                align-content: center;
+                text-align: center;
+                padding: 2px 5px;
+                font-size: 30;
+                font-family: Cambria;
+                color: lightsalmon;
+                border-spacing: 5px;
+                
+            }
+            
+            img.services{
+                align-content: center;
+                margin-left: 1%;
+                margin-right: 10%;
+            }
+            body{
+                background-image: url('Salon_project/background1.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            table.package{
+                
+                padding: 10px;
+                border-spacing: 11px;
+                width: 700px;
+                height: 400px;
+                margin-top: 2%;
+                margin-left: 5%;
+                margin-bottom: 3%;
+            }
+            tr.package{
+                border-color: black;
+                text-align: center;
+            
+                
+                
+            }
+            td.package{
+                border-color: black;
+                border-radius: 20px;
+                padding: 10px 30px;
+                font-weight: bold;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                background-color: lightsalmon;
+                font-size: 12pt;
+                color: white;
+                width: 100px;
+            }
+            p.price1{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -25%;
+                margin-right: -1%;
+                background-color: black;
+                color: white;
+            }
+            p.price2{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -20%;
+                margin-right: -1%;
+                background-color: black;
+                color: white;
+            }
+            p.price3{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -10%;
+                margin-right: -1%;
+                background-color: black;
+                color: white;
+            }
+            p.price4{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -29%;
+                margin-right: -1%;
+                background-color: black;
+                color: white;
+            }
+            p.price5{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -20%;
+                margin-right: -1%;
+                background-color: black;
+                color: white;
+            }
+            p.price6{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -12%;
+                margin-right: -1%;
+                background-color:black;
+                color: white;
+            }
+            p.price7{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -22%;
+                margin-right: -1%;
+                background-color: black;
+                color: white;
+            }
+            p.price8{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -17%;
+                margin-right: -1%;
+                background-color: black;
+                color: white;
+            }
+            p.price9{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -10%;
+                margin-right: -1%;
+                background-color:black;
+                color: white;
+            }
+            p.price10{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -10%;
+                margin-right: -1%;
+                background-color: black;
+                color: white;
+            }
+            p.price11{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -15%;
+                margin-right: -1%;
+                background-color: black;
+                color: white;
+            }
+            p.price12{
+                width: 100px;
+                border: 1px solid black;
+                padding: 2px;
+                margin-left: 16%;
+                margin-bottom: -21%;
+                margin-right: -1%;
+                background-color: black;
+                color: white;
+            }
+            .w3-lobster {
+                font-family: "Lobster", serif;
+            }
+            table.hours{
+                padding: 1px;
+                margin-left: 50%;
+                margin-right: 10%;
+                border-collapse: collapse;
+                border-spacing: 6px;
+                margin-top: -15%;
+                margin-bottom: 5%;
+                border-color: salmon;
+                
+
+            }
+            tr.trh1{
+                padding: 15px;
+                border-collapse: collapse;
+            }
+            td.tdh1{
+                text-align: center;
+                padding: 8px;
+                
+                font-size: 14pt;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: black;
+                color: white;
+            }
+            th.thh1{
+                text-align: center;
+                padding: 10px;
+                width: 300px;
+                font-size: 17pt;
+                color: salmon;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: black;
+            }
+            a.contact{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 40;
+                color: lightsalmon;
+                text-decoration: none;
+                margin-right: 66%;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <c>PROFESSIONAL</c>
+        <p style="color: salmon; font-weight: bold; font-size: 30;">"GIVING <u><a style="font-size: 40; color: lightsalmon;">SHINE</u></a> TO YOUR <u><a style="font-size: 40; color: lightsalmon;">STYLE</u></a> !!"</p>
+        <p>Your outlook is the reflection of your personality and we know how to bring out the real you...Let our professionals compliment your beautiful features by adding some personal touch... </p>
+        <br>
+        <hr>
+    
+        <br><br>
+        
+        <center><p style="color:rgb(188, 246, 253); font-size: 60pt; margin-top: -2%; font-family: fantasy; margin-left: 38.5%; margin-bottom: -2%; "> Packages </p></center>
+            
+        
+   
+
+        <center><table class="package">
+            <tr class="package">
+                <td class="package">
+                    Smart Bond<br>
+                    Hair Spa<br><br>
+                    <p class="price1">Rs. 750</p>
+                    
+                </td>
+                
+                <td class="package">
+                    Smoothing<br>
+                    (any length)<br>
+                    Hair Cut, Hair Spa
+                    <p class="price2">Rs. 750</p>
+                </td>
+                <td class="package">
+                    Rebonding<br>
+                    (any length)<br>
+                    Smart Bond, Hair Cut
+                    <p class="price3">Rs. 900</p>
+                </td>
+            </tr>
+            <tr class="package">
+                <td class="package">
+                    Olaplex<br>
+                    Hair Spa<br><br>
+                    <p class="price4">Rs. 1000</p>
+                </td>
+                <td class="package">
+                    Keratin<br>
+                    (any length)
+                    <br>Hair Cut
+                    <p class="price5">Rs. 1200</p>
+                </td>
+                
+                <td class="package">
+                    Highlights<br>
+                    (Balayage)<br>
+                    + Powermix <br>
+                    Treatment
+                    <p class="price6">Rs. 1200</p>
+                </td>
+                
+            </tr>
+            <tr class="package">
+                <td class="package">
+                    Gold Cleanup<br>
+                    Bleach<br>
+                    Eyebrow<br>
+                    Upper Lips
+                    <p class="price7">Rs. 1500</p>
+                </td>
+                
+                <td class="package">
+                    Diamond Facial<br>
+                    Bleach<br>
+                    Eyebrows<br>
+                    Upper Lips
+                    <p class="price8">Rs. 1800</p>
+                </td>
+                <td class="package">
+                    Casamara Cleanup<br>
+                    Eyebrows<br>
+                    Upper Lips<br>
+                    Lipo Wax
+                    <p class="price9">Rs. 2000</p>
+                </td>
+                
+            </tr>
+            <tr class="package">
+                
+                <td class="package">
+                    PureOxygen-Facial<br>
+                    D-Ten<br>
+                    Wax<br>
+                    Pedi(Classic)<br>
+                    Eyebrow<br>
+                    Upper Lips<br>
+                    <p class="price10">Rs. 2400</p>
+                </td>
+                <td class="package">
+                    Instant Glow<br>
+                    Head Massage<br>
+                    D-Ten<br>
+                    MeniCure(Spa)<br>
+                    PediCure(Spa)<br>
+                    Upper Lips<br>
+                    <p class="price11">Rs. 2500</p>
+                </td>
+                <td class="package" style="margin-top: -20%;">
+                    Skin-lighting<br>
+                    D-Ten<br>
+                    Deepcon<br>
+                    Meni(Ad.)<br>
+                    Pedi(Ad.)<br>
+                    Threading<br>
+                    
+                    <p class="price12">Rs. 3000</p>
+                </td>
+
+            </tr>
+
+        </table></center>
+    
+
+        
+        <hr>
+        <br><br>
+        <center><p style="color:rgb(188, 246, 253); font-size: 60pt; margin-top: -2%; font-family: fantasy; margin-left: 36%; margin-bottom: -1%; "> INFORMATION </p></center>
+        <p style="color: beige; font-size: 18; font-family: cursive; margin-left: 10%; margin-right: 10%; text-align: center;">
+            <b><i>"How can a visit to a beauty salon become an exceptional experience - one which makes you both look and feel great?"</b></i><br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Start with fabulous stylists with deep expertise. Support them with superb customer service. The combination provides a salon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experience that can truly cheer your day up.      
+        </p>
+        <br><br>
+        <img src="Salon_project/faded7.jpg" width="800px" height="400px" style="align-self: center; margin-left: 24%; margin-right: 10%;"><br><br><br>
+        <center><b><a class="viewmore" href="About.html">View more</a></b></center>
+        <br><br>
+        <hr>
+        <br><br>
+        <center><a class="contact">CONTACT US</a></center>
+        <p style="color: beige ; margin-left: 10%; font-size: 20; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-top: 3%;">
+            Mobile No. : +91 9824328766
+            <br>Email ID : abcdefgh1234@gmail.com
+        </p><br><br>
+
+
+        <table border="1" class="hours">
+            <center>
+            <tr class="trh1">
+                <th class="thh1">HOURS WORKING</th>
+                <th class="thh1">Opens at</th>
+                <th class="thh1">Closes at</th>
+            </tr>
+            <tr class="trh1">
+                <td class="tdh1">
+                    Monday to Friday 
+                </td>
+                <td class="tdh1">
+                    9 am
+                </td>
+                <td class="tdh1">
+                    7 pm
+                </td>
+            </tr>
+            <tr class ="trh1">
+                <td class="tdh1">
+                    Saturday
+                </td>
+                <td class="tdh1">
+                    9 am
+                </td>
+                <td class="tdh1">
+                    9 pm
+                </td>
+            </tr>
+            <tr class="trh1">
+                <td class="tdh1">
+                    Sunday
+                </td>
+                <td colspan="2" class="tdh1">
+                    -- closed --
+                </td>
+                
+            </tr>
+        </center>
+        </table>
+    </body>
+</html>

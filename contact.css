@@ -1,0 +1,19 @@
+.hours{
+    padding: 1px;
+}
+.trh1{
+    padding: 15px;
+}
+.tdh1{
+    text-align: center;
+    padding: 6px;
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.thh1{
+    text-align: center;
+    padding: 15px;
+    font-size: 17pt;
+    color: lightsalmon;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

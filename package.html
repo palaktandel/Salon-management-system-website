@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <style>
+            table{
+                border-color: black;
+                padding: 10px;
+                border-spacing: 10px;
+                width: 810px;
+                height: 600px;
+            }
+            tr{
+                border-color: black;
+                text-align: center;
+                
+                
+            }
+            td{
+                border-color: black;
+                border-radius: 20px;
+                padding: 10px;
+                font-weight: bold;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <center><table border="4">
+                <tr>
+                    <td>
+                        Smart Bond<br>
+                        Hair Spa<br><br>
+                        <button value="1" name="tick" onclick="package()">This-></button>
+
+                    </td>
+                    <td>
+                        Global Highlights
+                        <br>(any length)
+                        <br>Hair Cut<br>
+                        <br><input type="checkbox" name="check" id="GFG" 
+                        value="1" checked>this<br><button onclick="myGeeks()"> 
+                            Submit 
+                        </button>
+                    </td>
+                    <td>
+                        Smoothing<br>
+                        (any length)<br>
+                        Hair Cut, Hair Spa
+                    </td>
+                    <td>
+                        Rebonding<br>
+                        (any length)<br>
+                        Smart Bond, Hair Cut
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Olaplex<br>
+                        Hair Spa
+                    </td>
+                    <td>
+                        Keratin<br>
+                        (any length)
+                        <br>Hair Cut
+                    </td>
+                    <td>
+                        Global Color<br>
+                        with<br>
+                        Highlight Hair Cut
+                    </td>
+                    <td>
+                        Highlights<br>
+                        (Balayage)<br>
+                        + Powermix <br>
+                        Treatment
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        Gold Cleanup<br>
+                        Bleach<br>
+                        Eyebrow<br>
+                        Upper Lips
+                    </td>
+                    <td>
+                        Pearl Facial<br>
+                        Bleach<br>
+                        Hand Massage<br>
+                        Eyebrow<br>
+                        Upper Lips
+                    </td>
+                    <td>
+                        Diamond Facial<br>
+                        Bleach<br>
+                        Eyebrows<br>
+                        Upper Lips
+                    </td>
+                    <td>
+                        Casamara Cleanup<br>
+                        Eyebrows<br>
+                        Upper Lips<br>
+                        Lipo Wax
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        Facelifting<br>
+                        D-Ten<br>
+                        Wax<br>
+                        Deep Conditioning<br>
+                        Eyebrow<br>
+                        Upper Lips
+                    </td>
+                    <td>
+                        PureOxygen-Facial<br>
+                        D-Ten<br>
+                        Wax<br>
+                        Pedi(Classic)<br>
+                        Eyebrow<br>
+                        Upper Lips
+                    </td>
+                    <td>
+                        Instant Glow<br>
+                        Head Massage<br>
+                        D-Ten<br>
+                        Meni Cure(Spa)<br>
+                        Pedi Cure(Spa)<br>
+                        Upper Lips
+                    </td>
+                    <td>
+                        Skin Lighting<br>
+                        D-Ten<br>
+                        Hand Massage<br>
+                        Deepcon<br>
+                        Meni(Ad.)<br>
+                        Pedi(Ad.)<br>
+                        Eyebrows<br>
+                        Upper Lips
+                    </td>
+
+                </tr>
+                
+
+            </table></center>
+            
+                <input type="text" name="selected" id="selected">
+            
+        </form>
+        
+        <p id="sudo" style="color:green;font-size:20px;"></p>
+    </body>
+</html>
+
+<script>
+    function package()
+    {
+        document.getElementById('selected').value = "Package 1 selected";
+    }
+    function myGeeks() { 
+                var g = document.getElementById("GFG").value 
+                        = "1"; 
+                          
+                document.getElementById("sudo").innerHTML 
+                        = "You've selected Package " + g; 
+            } 
+</script>

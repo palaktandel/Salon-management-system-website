@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="login_db.php" method="POST">
+            
+                <label id="name" >Name: </label>
+            
+                <input type="text" id="name" name="name" required><br>
+         
+                <label id="age">Age :</label><br> 
+            
+                <input type="radio" name="age" value="kid" id="kid" />  Kid<br />
+                <input type="radio" name="age" value="teen" id="teen" />  Teen <br />
+                <input type="radio" name="age" value="adult" id="adult" /> Adult <br />
+        
+                <label id="phone">Mobile No. : </label>
+             
+                <input type="text" id="phone" name="phone" required><br>
+            
+                <label id="email">Email ID :</label>
+            
+                <input type="email" id="email" name="email" required><br>
+           
+                <label id="pwd">Password : </label>
+           
+                <input type="password" id="pwd" name="password" required maxlength="12" minlength="6">
+                <br>
+            
+            
+                <input type="submit" name="submit" id="login" value="Log In" >
+                
+            
+            </form>
+        
+    </body>
+</html>

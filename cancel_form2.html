@@ -1,0 +1,70 @@
+<html>
+    <style>
+        body{
+            background-image: url("Salon_project/login9.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table{
+                border-color: crimson;
+                background-color:rgba(247, 244, 244, 0.658);
+                padding: 60px 40px;
+                border-radius: 1cm;
+                margin-left: 25%;
+                margin-right: 20%;
+                margin-top: 15%;
+                
+            }
+            tr,td{
+                padding: 12px;
+                border-color: aqua;
+                font-size: 20;
+                
+            }
+            input[type=text]
+            {
+                width: 100%;
+                padding: 6px 25px;
+                font-size: 19;
+                display: inline-block;
+                border: 2px solid bold ;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=text]:focus {
+                background-color: rgba(250, 250, 248, 0.938);
+            }
+            #cancel{
+                margin-top: 15%;
+                margin-left: 70%;
+                padding: 4px 6px;
+                border-radius: 1cm;
+                background-color: black;
+                color: beige;
+                font-size: 20;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin-bottom: -25%;
+            }
+    </style>
+<body>
+    <table>
+<form action="cancel3.php" method="GET">
+    
+<tr>
+    <td>
+        <label>Enter your Booking_id :</label>
+    </td>
+    <td>
+        <input type="text" placeholder="Booking_id" name="booking_id" id="booking_id">
+    </td>
+</tr>
+<tr>
+<td>
+    <center>
+    <input type="submit" name="submit" value="Cancel Booking" id="cancel"></center>
+</td>
+</tr>
+</form>
+</table>
+</body>
+</html>
