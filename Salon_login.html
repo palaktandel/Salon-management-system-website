@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <style>
+            body{
+                background-image: url('Salon_project/login2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            table{
+                border-color: crimson;
+                background-color: rgb(252, 212, 245);
+                padding: 60px 50px;
+                border-radius: 1cm;
+                margin-left: 10%;
+                margin-right: 20%;
+                margin-top: -7%;
+                
+            }
+            tr,td{
+                padding: 12px;
+                border-color: aqua;
+                font-size: 20;
+                
+            }
+            div{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                
+            }
+            #login{
+                margin-left: 120%;
+                margin-top: 40%;
+                padding: 10px 20px;
+                border-radius: 1cm;
+                background-color: black;
+                color: beige;
+                font-size: 20;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .w3-lobster {
+                font-family: "Lobster", serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-container w3-lobster">
+            <p class="w3-xxxlarge" style="color:black; margin-left: 7%; margin-right: 50%; ">Welcome to Beauty Blossom !! </p>
+            
+        </div><br><br>
+        <div>
+            <table >
+                    <tr>
+                    
+                        <form action="Salon_db_connect.php" method="POST">
+                        <td>
+                            <label id="name" >Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" required>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="age">Age :</label> 
+                        </td>
+                        <td>
+                            <input type="radio" name="age" value="kid" id="kid" />  Kid<br />
+                            <input type="radio" name="age" value="teen" id="teen" />  Teen <br />
+                            <input type="radio" name="age" value="adult" id="adult" /> Adult <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="phone">Mobile No. : </label>
+                        </td>
+                        <td> 
+                            <input type="text" id="phone" name="phone" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="email">Email ID :</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="pwd">Password : </label>
+                        </td>
+                        <td>
+                            <input type="password" id="pwd" name="password" required maxlength="12" minlength="6">
+                        </td>
+                    </tr>
+                    <br><br>
+                    <tr>
+                        <center>
+                        <td>
+                            <input type="submit" name="submit" id="login" value="Log In" ></center>
+                            
+                        </td>
+                    </tr>
+                        </form>
+                    
+               
+               
+            </table>
+        </div>
+    </body>
+</html>

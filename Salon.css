@@ -1,0 +1,65 @@
+body{
+    background-image: url('Salon_project/background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1{
+    font-family: Cambria;
+    font-size: 48;
+    text-align: left;
+    margin-left: 10%;
+    color: white;
+    margin-top: 2%;
+}
+
+
+hr{
+    margin-left: 100px;
+    margin-right: 100px;
+    border-color: lightsalmon;
+    margin-top:-1%;
+    
+    
+}
+table{
+    margin-left: 40%;
+    margin-right: 10%;
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin-top: -5% ;
+    
+}
+th,td {
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    padding: 7px;
+    font-size: 18;
+    font-family: Cambria;
+    background-color:lightsalmon;
+    border-spacing: 6px;
+    border-style: double;
+    
+}
+a:link, a:visited{ 
+    text-decoration: none;
+    color:black ;
+    background-color:none;
+    font-size: 18;
+}
+a:hover, a:active{ 
+    text-decoration: underline; 
+    color: white; 
+    background-color: none;
+     
+}
+
+
+a.contact{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40;
+    color: lightsalmon;
+    text-decoration: none;
+}

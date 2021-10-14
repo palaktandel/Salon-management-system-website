@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <style>
+            body{
+                background-image: url(Salon_project/login9.jpg);
+                background-size: cover ;
+                background-repeat: no-repeat;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            div{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                
+            }
+            #signup{
+                
+                padding: 10px 20px;
+                border-radius: 1cm;
+                background-color: black;
+                color: beige;
+                font-size: 20;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            table{
+                border-color: crimson;
+                background-color:rgba(247, 244, 244, 0.658);
+                padding: 60px 40px;
+                border-radius: 1cm;
+                margin-left: 8%;
+                margin-right: 20%;
+                margin-top: -3.5%;
+                
+            }
+            tr,td{
+                padding: 12px;
+                border-color: aqua;
+                font-size: 20;
+                
+            }
+            input[type=text], input[type=email], input[type=password]
+            {
+                width: 100%;
+                padding: 3px 12px;
+                
+                display: inline-block;
+                border: 2px solid bold ;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=text]:focus {
+                background-color: rgba(250, 250, 248, 0.938);
+            }
+            input[type=email]:focus {
+                background-color: rgba(250, 250, 248, 0.938);
+            }
+            input[type=password]:focus {
+                background-color: rgba(250, 250, 248, 0.938);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <p style="color:rgb(8, 8, 8); margin-left: 50%; margin-right: 10%; margin-top: 15%; margin-bottom : -30%; font-size: 60pt; font-family:fantasy;  ">Welcome to <br>Beauty Blossom !! </p>
+            
+        </div>
+        <div>
+        <table >
+            <tr>
+            
+                <form action="signup_db_connect.php" method="POST">
+                <td>
+                    <label id="name" >Name: </label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" required>
+                </td>    
+            </tr>
+            <tr>
+                <td>
+                    <label id="age" >Age : </label>
+                </td>
+                <td>
+                    
+                    <input type="radio" class="age" id="kid" name="age" value="kid">  Kid<br>
+                    <input type="radio"  class="age" id="teen" name="age" value="teen">  Teen<br>
+                    <input type="radio"  class="age" id="adult" name="age" value="adult">  Adult<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="phone">Mobile No. : </label>
+                </td>
+                <td>
+                    <input type="text" id="phone" name="phone" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label id="email">Email ID :</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="username">Username :</label>
+                </td>
+                <td>
+                    <input type="text" id="username" name="username" required>
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <label id="pwd">Password : </label>
+                </td>
+                <td>
+                    <input type="password" id="pwd" name="password" required maxlength="12" minlength="6">
+                </td>
+            </tr>
+            <br>
+            <br>
+            <br><br><br>
+            <tr>
+                <td colspan="2">
+                    <center><br><br>
+                        <input type="submit" value="SIGN UP" id="signup">
+                    </center>
+                </td>
+            </tr>
+                </form>
+            
+       
+       
+    </table>
+    </div>
+    </body>
+</html>
